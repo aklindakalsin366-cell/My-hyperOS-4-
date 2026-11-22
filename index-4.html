@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d18">
+<title>Xiaomi X1 Ultra — HyperOS 4 Concept</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080b13;color:#f5f7ff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(6vw,22px);border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#080b13df;backdrop-filter:blur(20px);z-index:20}.brand{font-weight:800;letter-spacing:-.5px}.brand span{color:#9ec9ff}.navlinks{display:flex;gap:26px;color:#b9c2d6;font-size:14px}.navlinks a:hover{color:white}.pill{border:1px solid #ffffff2c;background:#ffffff0c;color:white;padding:11px 17px;border-radius:30px}.hero{min-height:690px;padding:90px 8vw 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 78% 45%,#31476d66,transparent 45%),radial-gradient(ellipse at 18% 0%,#5c3d8150,transparent 38%)}.eyebrow{color:#a9cfff;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:750}.hero h1{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-5px;margin:22px 0}.hero h1 span{background:linear-gradient(100deg,#fff,#9bcaff 55%,#c4a6ff);background-clip:text;color:transparent}.lead{max-width:520px;color:#aeb8cd;font-size:17px;line-height:1.7}.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.primary{background:#dceaff;color:#111a2b;border:0;padding:14px 22px;border-radius:30px;font-weight:750}.secondary{border:1px solid #ffffff36;background:#ffffff0b;color:white;padding:14px 22px;border-radius:30px}.visual{display:flex;justify-content:center;align-items:center;position:relative;min-height:480px}.orb{position:absolute;width:380px;height:380px;border-radius:50%;background:linear-gradient(140deg,#8abfff55,#b48bff33,#f7b9d933);filter:blur(45px)}.device{position:relative;width:238px;height:470px;border:7px solid #424958;border-radius:42px;background:linear-gradient(145deg,#243955,#111827 55%,#5a4669);box-shadow:0 35px 100px #000c,0 0 65px #9acaff22;transform:rotate(-8deg);padding:13px;overflow:hidden}.device:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 30%,#a8d5ff99,transparent 45%),radial-gradient(ellipse at 80% 75%,#e5a8ed77,transparent 45%)}.device:after{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:75px;height:18px;border-radius:15px;background:#05070c}.devicecontent{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;padding:26px 8px 8px}.devtime{font-size:43px;font-weight:300;letter-spacing:-2px;margin-top:48px}.devdate{font-size:11px;color:#e2eaff}.devwidget{margin-top:25px;padding:14px;border-radius:18px;background:#ffffff24;border:1px solid #ffffff3b;backdrop-filter:blur(15px);font-size:11px}.devicons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:auto;margin-bottom:18px}.devicons i{height:37px;border-radius:12px;background:#ffffff36;border:1px solid #ffffff50;display:grid;place-items:center;font-style:normal}.specstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#ffffff15;border-block:1px solid #ffffff14}.spec{padding:27px 12px;text-align:center;background:#0c111d}.spec b{font-size:22px;display:block}.spec small{color:#8793aa}.section{padding:100px 8vw}.sectionhead{text-align:center;max-width:700px;margin:0 auto 48px}.sectionhead h2{font-size:clamp(32px,4vw,52px);letter-spacing:-2px;margin:12px 0}.sectionhead p{color:#9da9c0;line-height:1.7}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{border:1px solid #ffffff18;border-radius:24px;padding:27px;background:linear-gradient(145deg,#ffffff0c,#ffffff04);min-height:190px}.feature .symbol{font-size:25px;color:#b8d7ff}.feature h3{margin:22px 0 8px}.feature p{color:#9da9bf;font-size:14px;line-height:1.65}.demo{background:radial-gradient(ellipse at 50% 15%,#31446a55,transparent 55%),#0b101b}.demogrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.demotext h2{font-size:48px;letter-spacing:-2px;margin:14px 0}.demotext p{color:#a8b4ca;line-height:1.7}.demotext ul{padding-left:20px;color:#c6d0e2;line-height:2}.phoneouter{width:min(340px,90vw);height:680px;margin:auto;border:8px solid #3c4351;border-radius:48px;background:#0b0f19;box-shadow:0 30px 100px #000b;overflow:hidden;position:relative}.phonescreen{height:100%;padding:16px;background:linear-gradient(145deg,#233d60,#10192d 55%,#563c62);position:relative;overflow:hidden}.phonescreen:before{content:"";position:absolute;width:260px;height:330px;left:-100px;top:180px;border-radius:50%;background:#a5d4ff66;filter:blur(35px)}.phoneisland{position:absolute;z-index:3;top:8px;left:50%;transform:translateX(-50%);width:88px;height:21px;background:#02040a;border-radius:20px}.pstatus{position:relative;z-index:2;display:flex;justify-content:space-between;font-size:12px}.phome{position:relative;z-index:2;height:calc(100% - 28px);display:flex;flex-direction:column}.pdate{margin-top:40px;font-size:13px}.pclock{font-size:54px;font-weight:300;letter-spacing:-3px}.pweather{font-size:12px;color:#e0e9ff}.psearch{margin-top:24px;padding:12px 14px;border-radius:20px;background:#ffffff20;border:1px solid #ffffff30;font-size:12px}.pwidgets{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.pwidget{padding:12px;border-radius:17px;background:#ffffff20;border:1px solid #ffffff30;font-size:11px;min-height:76px}.pwidget small{display:block;margin-top:8px;color:#dce5f7}.papps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px 5px;margin-top:auto;margin-bottom:17px}.app{border:0;background:none;color:white;font-size:10px;display:flex;flex-direction:column;align-items:center;gap:5px}.app i{font-style:normal;width:43px;height:43px;border-radius:14px;background:#ffffff2b;border:1px solid #ffffff4a;display:grid;place-items:center;font-size:20px;backdrop-filter:blur(12px)}.dock{display:flex;justify-content:space-around;padding:8px;background:#ffffff20;border:1px solid #ffffff30;border-radius:20px}.dock .app i{width:39px;height:39px}.gesture{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:95px;height:4px;background:white;border-radius:9px;z-index:4}.overlay{display:none;position:absolute;z-index:8;inset:0;padding:55px 18px 25px;background:#dce9f7ed;color:#172239;backdrop-filter:blur(25px);overflow:auto}.overlay.show{display:block}.overlay h3{font-size:25px;margin:8px 0 18px}.xbtn{float:right;border:0;background:#ffffffa0;border-radius:50%;width:34px;height:34px;font-size:20px}.tiles{display:grid;grid-template-columns:1fr 1fr;gap:9px}.tile{padding:14px;border:1px solid white;background:#ffffff8c;border-radius:16px;color:#1b2942;text-align:left;font-weight:700}.tile small{display:block;font-weight:400;margin-top:5px}.overlay input[type=range]{width:100%;margin:15px 0}.appscreen{display:none;position:absolute;z-index:7;inset:0;padding:55px 20px;background:linear-gradient(145deg,#e8f1ff,#c4d4ee);color:#172239}.appscreen.show{display:block}.appscreen h3{font-size:27px}.appscreen button{border:1px solid white;background:#ffffffa0;padding:11px 14px;border-radius:13px;color:#172239}.appscreen textarea{width:100%;height:170px;border:0;border-radius:14px;padding:12px;font:inherit}.demofoot{font-size:12px;color:#7f8da6;margin-top:15px}.footer{padding:35px 8vw;border-top:1px solid #ffffff14;color:#8995aa;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px}
+.storeitem{display:flex;align-items:center;gap:10px;padding:12px;margin:9px 0;background:#ffffffa8;border:1px solid white;border-radius:16px}.gameicon{width:45px;height:45px;border-radius:13px;background:#dce8fa;display:grid;place-items:center;font-size:24px}.gametext{flex:1;min-width:0}.gametext small,.settingrow small{display:block;color:#65738a;margin-top:4px}.storeitem button{white-space:nowrap}.settingrow{padding:13px 4px;border-bottom:1px solid #9aabc455}
+.settings-search{width:100%;padding:13px 15px;border:1px solid #ffffff90;border-radius:14px;background:#ffffffa8;color:#172239;font:inherit;margin:0 0 14px}
+.settings-group{background:#ffffff9c;border:1px solid #ffffffb8;border-radius:17px;padding:4px 13px;margin:11px 0}
+.settings-item{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:13px 2px;border:0;border-bottom:1px solid #9aabc433;background:transparent;color:#172239;border-radius:0}
+.settings-item:last-child{border-bottom:0}
+.settings-icon{width:37px;height:37px;flex:0 0 37px;border-radius:12px;background:#dce8fa;display:grid;place-items:center;font-size:19px}
+.settings-copy{flex:1;min-width:0}.settings-copy b{display:block;font-size:14px}.settings-copy small{display:block;color:#65738a;font-size:11px;margin-top:3px}
+.settings-arrow{color:#7c8aa1;font-size:20px}
+.settings-detail{background:#ffffff9c;border:1px solid #ffffffb8;border-radius:17px;padding:15px;margin:12px 0;color:#172239}
+.settings-detail p{font-size:13px;line-height:1.6;color:#53627a}
+.settings-control{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #9aabc433;color:#172239;font-size:14px}
+.settings-control:last-child{border-bottom:0}
+.settings-control input[type=range]{width:45%;accent-color:#477fc7}
+.settings-control input[type=checkbox]{width:20px;height:20px;accent-color:#477fc7}
+.settings-action{border:0!important;background:#dce9fa!important;color:#213652!important;margin-top:10px}
+.settings-back{margin:0 0 12px}
+.gesture{border:0;padding:0;cursor:pointer}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center;padding-top:70px}.lead{margin:auto}.actions{justify-content:center}.visual{min-height:500px}.specstrip{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.demogrid{grid-template-columns:1fr}.demotext{text-align:center}.demotext ul{display:inline-block;text-align:left}.navlinks{display:none}.section{padding:75px 6vw}.hero h1{letter-spacing:-3px}}
+</style>
+</head>
+<body>
+<header class="nav"><a class="brand" href="#">XIAOMI <span>X1 ULTRA</span></a><nav class="navlinks"><a href="#ozellikler">Özellikler</a><a href="#tasarim">Tasarım</a><a href="#demo">HyperOS 4 Demo</a></nav><a class="pill" href="#demo">Demoyu dene ↗</a></header>
+<main>
+<section class="hero" id="tasarim"><div><div class="eyebrow">Yeni nesil konsept cihaz</div><h1>Xiaomi<br><span>X1 Ultra.</span></h1><p class="lead">Gücün, zarafetin ve HyperOS 4 esintili yeni bir deneyimin buluştuğu konsept telefon. Geleceğin arayüzünü şimdi keşfet.</p><div class="actions"><a class="primary" href="#demo">Telefonu keşfet</a><a class="secondary" href="#ozellikler">Özellikleri gör</a></div></div><div class="visual"><div class="orb"></div><div class="device"><div class="devicecontent"><div style="font-size:10px">09:41　　◈ 5G ▰</div><div class="devtime">09:41</div><div class="devdate">Pazartesi, 23 Kasım</div><div class="devwidget">☀ İstanbul · 22°<br><br>Günün güzel geçsin.</div><div class="devicons"><i>☎</i><i>▤</i><i>▧</i><i>◉</i><i>⚙</i><i>♫</i><i>◎</i><i>▣</i></div></div></div></div></section>
+<div class="specstrip"><div class="spec"><b>6.8”</b><small>AMOLED ekran</small></div><div class="spec"><b>120 Hz</b><small>Akıcı yenileme</small></div><div class="spec"><b>16 GB</b><small>Konsept RAM</small></div><div class="spec"><b>1 TB</b><small>Konsept depolama</small></div></div>
+<section class="section" id="ozellikler"><div class="sectionhead"><div class="eyebrow">Detaylarda mükemmellik</div><h2>Her dokunuşta yeni bir deneyim.</h2><p>X1 Ultra, modern telefon tasarımından ilham alan hayalî bir konsepttir. Teknik değerler temsilîdir.</p></div><div class="features"><article class="feature"><div class="symbol">✧</div><h3>Soft Glass arayüz</h3><p>Yarı saydam kartlar, yumuşak ışık geçişleri ve derinlik hissi veren katmanlar.</p></article><article class="feature"><div class="symbol">◉</div><h3>120 Hz akıcılık</h3><p>Hızlı geçişler ve akıcı animasyonlar için tasarlanmış konsept ekran deneyimi.</p></article><article class="feature"><div class="symbol">⌁</div><h3>Kişisel kontrol</h3><p>Bağlantı kontrolleri, parlaklık ve hızlı ayarlar tek bir panelde.</p></article></div></section>
+<section class="section demo" id="demo"><div class="demogrid"><div class="demotext"><div class="eyebrow">Etkileşimli deneyim</div><h2>HyperOS 4.<br>Senin kontrolünde.</h2><p>Telefon ekranını kullanmayı dene. Uygulamaları aç, kontrol merkezini görüntüle ve hızlı ayarları değiştir.</p><ul><li>Uygulama simgelerine dokun</li><li>Üst durum çubuğuna dokun: kontrol merkezi</li><li>Parlaklık çubuğunu hareket ettir</li><li>Ayarlar içinden konsept cihaz bilgilerini gör</li></ul><div class="demofoot">Not: Bu bir web simülasyonudur; gerçek telefon işletim sistemi değildir.</div></div>
+<div class="phoneouter"><div class="phonescreen" id="phonescreen"><div class="phoneisland"></div><div class="pstatus" id="pstatus"><span id="smalltime">09:41</span><span>◈ 5G ▰</span></div><div class="phome"><div class="pdate" id="pdate">Pazartesi, 23 Kasım</div><div class="pclock" id="pclock">09:41</div><div class="pweather">☀　22°　İstanbul</div><div class="psearch">⌕　Ara veya bir şey sor</div><div class="pwidgets"><div class="pwidget">☀ Günün özeti<small>Hava açık<br>Güzel bir gün seni bekliyor.</small></div><div class="pwidget">◷ Ekran süresi<small>Bugün<br><b style="font-size:18px">2 sa 18 dk</b></small></div></div><div class="papps"><button class="app" onclick="openApp('Telefon')"><i>☎</i>Telefon</button><button class="app" onclick="openApp('Mesajlar')"><i>▤</i>Mesajlar</button><button class="app" onclick="openApp('Galeri')"><i>▧</i>Galeri</button><button class="app" onclick="openApp('Kamera')"><i>◉</i>Kamera</button><button class="app" onclick="openApp('Ayarlar')"><i>⚙</i>Ayarlar</button><button class="app" onclick="openApp('Müzik')"><i>♫</i>Müzik</button><button class="app" onclick="openApp('Tarayıcı')"><i>◎</i>Tarayıcı</button><button class="app" onclick="openApp('Notlar')"><i>▣</i>Notlar</button><button class="app" onclick="openApp('Play Store')"><i>▶</i>Play Store</button><div id="installedApps" style="display:contents"></div></div><div class="dock"><button class="app" onclick="openApp('Telefon')"><i>☎</i></button><button class="app" onclick="openApp('Tarayıcı')"><i>◎</i></button><button class="app" onclick="openApp('Kamera')"><i>◉</i></button><button class="app" onclick="openApp('Galeri')"><i>▧</i></button></div></div>
+<div class="overlay" id="quick"><button class="xbtn" onclick="closePanels()">×</button><h3>Kontrol merkezi</h3><p id="paneldate">Pazartesi · 09:41</p><div class="tiles"><button class="tile" onclick="toggleTile(this)">◈ Wi‑Fi<small>Açık</small></button><button class="tile" onclick="toggleTile(this)">✈ Uçak modu<small>Kapalı</small></button><button class="tile" onclick="toggleTile(this)">◉ Bluetooth<small>Açık</small></button><button class="tile" onclick="toggleTile(this)">☾ Rahatsız etme<small>Kapalı</small></button></div><p>Parlaklık</p><input type="range" min="25" max="100" value="85" oninput="document.getElementById('phonescreen').style.filter='brightness('+this.value/85+')'"><p>Ses ve bağlantı ayarları</p></div>
+<div class="appscreen" id="appscreen"><button class="xbtn" onclick="closePanels()">×</button><h3 id="apptitle">Ayarlar</h3><div id="appbody"></div></div><button class="gesture" aria-label="Ana ekrana dön" onclick="goHome()"></button></div></div></div></section>
+</main><footer class="footer"><span>© 2026 Xiaomi X1 Ultra Concept</span><span>Bağımsız hayalî konsept · Xiaomi tarafından üretilmemiştir.</span></footer>
+<script>
+const pad=n=>String(n).padStart(2,'0');
+function updateClock(){
+  const d=new Date(),t=pad(d.getHours())+':'+pad(d.getMinutes());
+  const date=d.toLocaleDateString('tr-TR',{weekday:'long',day:'numeric',month:'long'});
+  document.getElementById('pclock').textContent=t;
+  document.getElementById('smalltime').textContent=t;
+  document.getElementById('pdate').textContent=date;
+  document.getElementById('paneldate').textContent=date+' · '+t;
+}
+updateClock(); setInterval(updateClock,15000);
+const quick=document.getElementById('quick'), appScreen=document.getElementById('appscreen');
+document.getElementById('pstatus').addEventListener('click',()=>{closePanels();quick.classList.add('show')});
+function closePanels(){quick.classList.remove('show');appScreen.classList.remove('show')}
+function goHome(){closePanels()}
+function toggleTile(el){const s=el.querySelector('small');const on=s.textContent==='Açık';s.textContent=on?'Kapalı':'Açık';el.style.background=on?'#ffffff70':'#b5d2f7'}
+function getInstalled(){try{return JSON.parse(localStorage.getItem('x1-installed')||'[]')}catch(e){return []}}
+function saveInstalled(list){try{localStorage.setItem('x1-installed',JSON.stringify(list))}catch(e){}}
+function renderInstalled(){
+  const holder=document.getElementById('installedApps'); if(!holder)return; holder.innerHTML='';
+  getInstalled().forEach(game=>{const b=document.createElement('button');b.className='app';b.innerHTML='<i>🎮</i>'+game; b.addEventListener('click',()=>openApp(game));holder.appendChild(b)});
+}
+function installGame(name){const list=getInstalled();if(!list.includes(name)){list.push(name);saveInstalled(list);renderInstalled()}openApp(name)}
+function playStore(){return `
+  <div style="background:#fff;border-radius:15px;padding:12px;margin-bottom:14px;color:#24324a">⌕　Oyun ve uygulama ara</div>
+  <h4>Önerilen oyunlar</h4>
+  <div class="storeitem"><div class="gameicon">🏃</div><div class="gametext"><b>X1 Runner</b><small>Mini koşu oyunu · 8 MB</small></div><button onclick="installGame('X1 Runner')">Yükle</button></div>
+  <div class="storeitem"><div class="gameicon">🧩</div><div class="gametext"><b>Renk Eşleştir</b><small>Bulmaca · 5 MB</small></div><button onclick="installGame('Renk Eşleştir')">Yükle</button></div>
+  <div class="storeitem"><div class="gameicon">⚽</div><div class="gametext"><b>Mini Penaltı</b><small>Spor · 12 MB</small></div><button onclick="installGame('Mini Penaltı')">Yükle</button></div>
+  <p class="demofoot">Bu mağaza simülasyondur. Oyunlar sanal telefona eklenir; gerçek Play Store veya APK kurulumu değildir.</p>`}
+function gameScreen(name){
+ if(name==='X1 Runner')return `<p>Engellerden kaç! Başlamak için dokun.</p><div id="score" style="font-size:25px;font-weight:800">Puan: 0</div><button style="width:100%;height:130px;font-size:42px" onclick="runnerTap()">🏃‍♂️　▶</button><p id="gamehint">Her dokunuşta puanın artar.</p>`;
+ if(name==='Renk Eşleştir')return `<p>Aynı renkteki kutuya dokun.</p><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px"><button style="height:90px;background:#e65c78" onclick="colorPoint()">Kırmızı</button><button style="height:90px;background:#4b91df" onclick="colorPoint()">Mavi</button><button style="height:90px;background:#42a987" onclick="colorPoint()">Yeşil</button><button style="height:90px;background:#e7b84e" onclick="colorPoint()">Sarı</button></div><p id="colorscore">Puan: 0</p>`;
+ if(name==='Mini Penaltı')return `<p>Penaltı zamanı! Şut çek.</p><div style="font-size:70px;text-align:center">🥅</div><button style="width:100%" onclick="penalty()">⚽ Şut çek</button><p id="goalresult">Skor: 0</p>`;
+ return `<p>Uygulama sanal telefona yüklendi.</p>`;
+}
+
+const settingsSections = [
+ ['Telefon hakkında','Xiaomi X1 Ultra · HyperOS 4 Concept','📱'],
+ ['Sistem uygulama güncelleyici','Uygulama güncellemeleri','↻'],
+ ['SIM kartlar ve mobil ağlar','Mobil veri · dolaşım','▥'],
+ ['Wi-Fi','Ağlar ve bağlantı','◈'],
+ ['Bluetooth','Cihazları eşleştir','ᛒ'],
+ ['Bağlantı ve paylaşım','Erişim noktası · yayınlama','⌁'],
+ ['Kilit ekranı','Saat · uyandırma','▣'],
+ ['Ekran ve parlaklık','Parlaklık · yenileme hızı · koyu mod','☼'],
+ ['Ses ve titreşim','Zil sesi · medya · dokunsal geri bildirim','♫'],
+ ['Bildirimler ve durum çubuğu','Bildirim görünümü · simgeler','▤'],
+ ['Ana ekran','Düzen · simgeler · animasyonlar','▦'],
+ ['Duvar kâğıdı ve kişiselleştirme','Duvar kâğıdı · temalar','✦'],
+ ['Şifreler ve güvenlik','Ekran kilidi · cihaz güvenliği','♙'],
+ ['Gizlilik koruması','İzinler · gizlilik panosu','◉'],
+ ['Uygulamalar','Varsayılan uygulamalar · izinler','▣'],
+ ['Pil','Pil kullanımı · tasarruf modu','▰'],
+ ['Depolama','Kullanılan alan · temizleme','▤'],
+ ['Konum','Konum hizmetleri','⌖'],
+ ['Dijital denge ve ebeveyn denetimleri','Ekran süresi · odak modu','◷'],
+ ['Ek ayarlar','Dil · tarih · klavye · erişilebilirlik','⚙'],
+ ['Erişilebilirlik','Görünüm · işitme · etkileşim','♿'],
+ ['Xiaomi hesabı','Hesap ve senkronizasyon (demo)','●']
+];
+const settingsDescriptions = {
+ 'Telefon hakkında':'Cihaz adı, model, depolama ve konsept sistem bilgileri.',
+ 'Sistem uygulama güncelleyici':'Bu konsept sürümünde gerçek sistem güncellemesi indirilemez.',
+ 'SIM kartlar ve mobil ağlar':'Mobil veri ve dolaşım seçenekleri simüle edilir.',
+ 'Wi-Fi':'Wi-Fi anahtarını açıp kapatabilir, örnek ağ seçebilirsin.',
+ 'Bluetooth':'Bluetooth durumunu değiştirebilirsin. Gerçek cihaz eşleştirmesi yapılmaz.',
+ 'Bağlantı ve paylaşım':'Kişisel erişim noktası ve yakındaki paylaşım seçenekleri.',
+ 'Kilit ekranı':'Kilit ekranı saati ve uyandırma davranışı.',
+ 'Ekran ve parlaklık':'Parlaklık, koyu mod ve yenileme hızı tercihleri.',
+ 'Ses ve titreşim':'Zil, medya ve alarm ses düzeyleri.',
+ 'Bildirimler ve durum çubuğu':'Bildirim rozetleri ve durum simgeleri.',
+ 'Ana ekran':'Ana ekran düzeni ve uygulama simgesi görünümü.',
+ 'Duvar kâğıdı ve kişiselleştirme':'Bu konsept için görünüm seçenekleri.',
+ 'Şifreler ve güvenlik':'Ekran kilidi ve güvenlik özellikleri. Gerçek şifre kaydedilmez.',
+ 'Gizlilik koruması':'Uygulama izinleri ve gizlilik göstergeleri.',
+ 'Uygulamalar':'Yüklü sanal uygulamaları görüntüle.',
+ 'Pil':'Pil tasarrufu ve pil yüzdesi seçenekleri.',
+ 'Depolama':'Sanal telefonun kullandığı alan.',
+ 'Konum':'Konum hizmetlerini açıp kapatabilirsin (simülasyon).',
+ 'Dijital denge ve ebeveyn denetimleri':'Ekran süresi ve odak modu örnekleri.',
+ 'Ek ayarlar':'Dil, tarih biçimi, klavye ve diğer tercihler.',
+ 'Erişilebilirlik':'Metin boyutu ve animasyon seçenekleri.',
+ 'Xiaomi hesabı':'Gerçek Xiaomi hesabına bağlanmaz; yalnızca tasarım demosudur.'
+};
+function settingValue(key, fallback='false'){
+ try { const v=localStorage.getItem('x1-setting-'+key); return v===null?fallback:v; } catch(e){ return fallback; }
+}
+function settingSave(key,value){try{localStorage.setItem('x1-setting-'+key,String(value));}catch(e){}}
+function settingsUI(){
+ const groups = [
+  ['Cihaz','Telefon hakkında','Sistem uygulama güncelleyici'],
+  ['Bağlantı','SIM kartlar ve mobil ağlar','Wi-Fi','Bluetooth','Bağlantı ve paylaşım'],
+  ['Kişiselleştirme','Kilit ekranı','Ekran ve parlaklık','Ses ve titreşim','Bildirimler ve durum çubuğu','Ana ekran','Duvar kâğıdı ve kişiselleştirme'],
+  ['Güvenlik ve gizlilik','Şifreler ve güvenlik','Gizlilik koruması','Konum'],
+  ['Uygulamalar ve pil','Uygulamalar','Pil','Depolama','Dijital denge ve ebeveyn denetimleri'],
+  ['Sistem','Ek ayarlar','Erişilebilirlik','Xiaomi hesabı']
+ ];
+ let out = `<input class="settings-search" placeholder="⌕　Ayarlarda ara" oninput="filterSettings(this.value)">`;
+ groups.forEach((g,idx)=>{
+  out += `<div class="settings-group" data-setting-group="${idx}"><div style="padding:10px 2px 4px;font-size:12px;font-weight:800;color:#65738a">${g[0]}</div>`;
+  g.slice(1).forEach(name=>{
+   const item=settingsSections.find(x=>x[0]===name);
+   out += `<button class="settings-item" data-setting-name="${name}" onclick="settingPage('${name.replace(/'/g,"\\'")}')"><span class="settings-icon">${item[2]}</span><span class="settings-copy"><b>${name}</b><small>${item[1]}</small></span><span class="settings-arrow">›</span></button>`;
+  });
+  out += `</div>`;
+ });
+ out += `<p style="text-align:center;font-size:11px;color:#718098">HyperOS 4 Concept · Xiaomi X1 Ultra</p>`;
+ return out;
+}
+function filterSettings(q){
+ const query=q.toLocaleLowerCase('tr');
+ document.querySelectorAll('.settings-item').forEach(el=>el.style.display=el.dataset.settingName.toLocaleLowerCase('tr').includes(query)?'flex':'none');
+ document.querySelectorAll('[data-setting-group]').forEach(group=>group.style.display=[...group.querySelectorAll('.settings-item')].some(x=>x.style.display!=='none')?'block':'none');
+}
+function settingToggle(label,key,sub=''){
+ const checked=settingValue(key)==='true'?'checked':'';
+ return `<label class="settings-control"><span>${label}${sub?`<small style="display:block;color:#718098;margin-top:3px">${sub}</small>`:''}</span><input type="checkbox" ${checked} onchange="settingSave('${key}',this.checked)"></label>`;
+}
+function settingSlider(label,key,min=0,max=100,unit='%'){
+ const val=Number(settingValue(key,'65'));
+ return `<label class="settings-control"><span>${label} <b id="val-${key}">${val}${unit}</b></span><input type="range" min="${min}" max="${max}" value="${val}" oninput="document.getElementById('val-${key}').textContent=this.value+'${unit}';settingSave('${key}',this.value)"></label>`;
+}
+function settingPage(name){
+ const body=document.getElementById('appbody');
+ let detail=`<button class="settings-back" onclick="openApp('Ayarlar')">‹　Tüm ayarlar</button><div class="settings-detail"><div style="font-size:35px">${(settingsSections.find(x=>x[0]===name)||[])[2]||'⚙'}</div><h3 style="font-size:21px;margin:8px 0">${name}</h3><p>${settingsDescriptions[name]||''}</p>`;
+ const add=(s)=>detail+=s;
+ if(name==='Telefon hakkında'){
+  add(`<div class="settings-control"><span>Model</span><b>Xiaomi X1 Ultra</b></div><div class="settings-control"><span>İşletim sistemi</span><b>HyperOS 4 Concept</b></div><div class="settings-control"><span>RAM</span><b>16 GB</b></div><div class="settings-control"><span>Depolama</span><b>1 TB</b></div><div class="settings-control"><span>Ekran</span><b>AMOLED · 120 Hz</b></div><div class="settings-control"><span>Android sürümü</span><b>Konsept simülasyon</b></div><button class="settings-action" onclick="alert('Bu konseptte güncelleme bulunmuyor.')">Güncellemeleri kontrol et</button>`);
+ } else if(name==='Ekran ve parlaklık'){
+  add(settingSlider('Parlaklık','brightness',10,100)+settingToggle('Otomatik parlaklık','auto-brightness')+settingToggle('Koyu mod','dark-mode')+settingToggle('Okuma modu','reading-mode')+`<div class="settings-control"><span>Yenileme hızı</span><select onchange="settingSave('refresh-rate',this.value)" style="padding:8px;border:0;border-radius:9px"><option>60 Hz</option><option selected>120 Hz</option><option>90 Hz</option></select></div>`);
+ } else if(name==='Ses ve titreşim'){
+  add(settingSlider('Medya sesi','media-volume')+settingSlider('Zil sesi','ring-volume')+settingSlider('Alarm sesi','alarm-volume')+settingToggle('Titreşim','vibration', 'Dokunsal geri bildirim')+settingToggle('Sessiz mod','silent-mode'));
+ } else if(name==='Wi-Fi'){
+  add(settingToggle('Wi-Fi','wifi','Kablosuz ağ (simülasyon)')+`<div class="settings-control"><span>Ev Wi-Fi</span><button onclick="alert('Bağlandı (simülasyon).')">Bağlan</button></div><div class="settings-control"><span>Xiaomi_5G</span><button onclick="alert('Ağ seçildi (simülasyon).')">Bağlan</button></div>`);
+ } else if(name==='Bluetooth'){
+  add(settingToggle('Bluetooth','bluetooth')+`<div class="settings-control"><span>Yakındaki cihazlar</span><button onclick="alert('Arama tamamlandı. Eşleştirilecek cihaz bulunamadı.')">Tara</button></div>`);
+ } else if(name==='SIM kartlar ve mobil ağlar'){
+  add(settingToggle('Mobil veri','mobile-data')+settingToggle('Veri dolaşımı','data-roaming')+`<div class="settings-control"><span>Tercih edilen ağ</span><select onchange="settingSave('network-mode',this.value)" style="padding:8px;border:0;border-radius:9px"><option>5G tercihli</option><option>4G/LTE</option><option>3G</option></select></div>`);
+ } else if(name==='Pil'){
+  add(`<div style="font-size:34px;font-weight:700">86%</div><p>Yaklaşık 1 gün 8 saat kaldı (örnek değer).</p>`+settingToggle('Pil tasarrufu','battery-saver')+settingToggle('Pil yüzdesini göster','battery-percent')+settingToggle('Performans modu','performance-mode'));
+ } else if(name==='Depolama'){
+  const used=Object.keys(localStorage).reduce((n,k)=>n+k.length+(localStorage.getItem(k)||'').length,0);
+  add(`<div class="settings-control"><span>Kullanılan sanal veri</span><b>${(used/1024).toFixed(1)} KB</b></div><div class="settings-control"><span>Toplam kapasite</span><b>1 TB (konsept)</b></div><div class="settings-control"><span>Yüklü oyun</span><b>${getInstalled().length}</b></div><button class="settings-action" onclick="alert('Sanal önbellek temizlendi (örnek).')">Önbelleği temizle</button>`);
+ } else if(name==='Uygulamalar'){
+  const apps=['Telefon','Mesajlar','Galeri','Kamera','Ayarlar','Müzik','Tarayıcı','Notlar','Play Store',...getInstalled()];
+  add(apps.map(a=>`<div class="settings-control"><span>${a}</span><button onclick="openApp('${a.replace(/'/g,"\\'")}')">Aç</button></div>`).join(''));
+ } else if(name==='Duvar kâğıdı ve kişiselleştirme'){
+  add(`<div class="settings-control"><span>Duvar kâğıdı</span><button onclick="alert('Duvar kâğıdı galerisi yakında.')">Değiştir</button></div>`+settingToggle('Dinamik renkler','dynamic-colors')+settingToggle('Uygulama simgesi etiketleri','icon-labels'));
+ } else if(name==='Ana ekran'){
+  add(settingToggle('Uygulama çekmecesi','app-drawer')+settingToggle('Ana ekran arama çubuğu','home-search')+settingToggle('Ana ekranı döndür','home-rotation')+`<div class="settings-control"><span>Simge boyutu</span><select onchange="settingSave('icon-size',this.value)" style="padding:8px;border:0;border-radius:9px"><option>Küçük</option><option selected>Varsayılan</option><option>Büyük</option></select></div>`);
+ } else if(name==='Bildirimler ve durum çubuğu'){
+  add(settingToggle('Bildirim simgelerini göster','notification-icons')+settingToggle('Pil yüzdesi','status-battery')+settingToggle('Bildirim ışığı (simülasyon)','notification-light'));
+ } else if(name==='Kilit ekranı'){
+  add(settingToggle('Ekranı uyandırmak için kaldır','raise-wake')+settingToggle('Bildirimleri kilit ekranında göster','lock-notifications')+settingToggle('Çift dokunarak uyandır','double-tap-wake'));
+ } else if(name==='Gizlilik koruması'){
+  add(settingToggle('Gizlilik panosu','privacy-dashboard')+settingToggle('Kamera erişim göstergesi','camera-indicator')+settingToggle('Mikrofon erişim göstergesi','mic-indicator')+`<p>Bu kontroller yalnızca simülasyon arayüzünü etkiler.</p>`);
+ } else if(name==='Konum'){
+  add(settingToggle('Konum erişimi','location')+settingToggle('Uygulamaların konum izni','app-location'));
+ } else if(name==='Dijital denge ve ebeveyn denetimleri'){
+  add(`<div class="settings-control"><span>Bugünkü ekran süresi</span><b>2 sa 18 dk</b></div>`+settingToggle('Odak modu','focus-mode')+settingToggle('Uyku zamanı','bedtime-mode'));
+ } else if(name==='Ek ayarlar'){
+  add(`<div class="settings-control"><span>Dil</span><select onchange="settingSave('language',this.value)" style="padding:8px;border:0;border-radius:9px"><option selected>Türkçe</option><option>English</option></select></div><div class="settings-control"><span>Tarih biçimi</span><select onchange="settingSave('date-format',this.value)" style="padding:8px;border:0;border-radius:9px"><option>23 Kasım 2026</option><option>23.11.2026</option></select></div>`+settingToggle('Animasyonları azalt','reduce-motion')+settingToggle('Tek elle kullanım','one-hand'));
+ } else if(name==='Erişilebilirlik'){
+  add(settingSlider('Metin boyutu','text-size',80,140,'%')+settingToggle('Yüksek kontrastlı metin','high-contrast')+settingToggle('Animasyonları azalt','access-reduce-motion'));
+ } else if(name==='Şifreler ve güvenlik'){
+  add(settingToggle('Ekran kilidi','screen-lock')+settingToggle('Cihazımı bul (demo)','find-device')+`<p>Gerçek parola, biyometrik veri veya hesap bilgisi bu simülasyonda istenmez ve saklanmaz.</p>`);
+ } else if(name==='Bağlantı ve paylaşım'){
+  add(settingToggle('Kişisel erişim noktası','hotspot')+settingToggle('Yakındaki cihazlarla paylaş','nearby-share')+settingToggle('Kablosuz ekran','wireless-display'));
+ } else if(name==='Xiaomi hesabı'){
+  add(`<p>Bu, Xiaomi tarafından sunulan gerçek bir hesap oturumu değildir.</p><button class="settings-action" onclick="alert('Hesap bağlantısı konseptte kullanılamaz.')">Giriş yap</button>`);
+ } else if(name==='Sistem uygulama güncelleyici'){
+  add(`<div class="settings-control"><span>HyperOS 4 Concept</span><b>Güncel</b></div><button class="settings-action" onclick="alert('Konsept sürüm güncel.')">Güncellemeleri kontrol et</button>`);
+ } else {
+  add(settingToggle('Bu özelliği etkinleştir',name.replace(/\W/g,'-').toLowerCase()));
+ }
+ detail+='</div>';
+ body.innerHTML=detail;
+}
+
+function openApp(n){
+ closePanels();document.getElementById('apptitle').textContent=n;let content={
+'Ayarlar':settingsUI(),
+'Kamera':`<div style="height:230px;border-radius:18px;background:linear-gradient(145deg,#172a43,#8aa5c7);display:grid;place-items:center;color:white;font-size:48px">◉</div><p>Fotoğraf　　Video　　Portre</p><button onclick="alert('Konsept fotoğraf çekildi!')">◉ Fotoğraf çek</button>`,
+'Galeri':`<p>Bugün</p><div style="height:110px;border-radius:15px;background:linear-gradient(135deg,#759cc7,#d6a6d5)"></div><p>Albümler　·　Favoriler</p>`,
+'Telefon':`<p style="font-size:40px;text-align:center;margin-top:45px">⌕</p><input id="dial" placeholder="Numara gir" style="width:100%;padding:14px;border:0;border-radius:12px"><p style="text-align:center"><button onclick="alert('Arama simülasyonu')">Ara</button></p>`,
+'Mesajlar':`<p>Henüz mesaj yok.</p><textarea placeholder="Mesaj yaz..."></textarea><button onclick="alert('Mesaj simülasyonu gönderildi')">Gönder</button>`,
+'Müzik':`<div style="height:170px;border-radius:18px;background:linear-gradient(135deg,#303b70,#c58cae);display:grid;place-items:center;font-size:55px;color:white">♫</div><p style="text-align:center">Şimdi çalıyor<br><button onclick="this.textContent=this.textContent==='▶ Oynat'?'Ⅱ Duraklat':'▶ Oynat'">▶ Oynat</button></p>`,
+'Tarayıcı':`<p>Web'de ara</p><input id="webquery" placeholder="Adres veya arama" style="width:100%;padding:13px;border:0;border-radius:12px"><button style="margin-top:10px" onclick="searchWeb()">Git</button>`,
+'Notlar':`<textarea id="notes" placeholder="Notunu yaz..." oninput="try{localStorage.setItem('x1-note',this.value)}catch(e){}"></textarea>`,
+'Play Store':playStore()
+ };
+ document.getElementById('appbody').innerHTML=content[n]||gameScreen(n);
+ if(n==='Notlar'){try{document.getElementById('notes').value=localStorage.getItem('x1-note')||''}catch(e){}}
+ appScreen.classList.add('show');
+}
+function searchWeb(){const q=document.getElementById('webquery').value.trim();if(q)window.open('https://www.google.com/search?q='+encodeURIComponent(q),'_blank','noopener')}
+function runnerTap(){const el=document.getElementById('score');if(el)el.textContent='Puan: '+(Number(el.textContent.replace(/\D/g,''))+1)}
+function colorPoint(){const el=document.getElementById('colorscore');if(el)el.textContent='Puan: '+(Number(el.textContent.replace(/\D/g,''))+1)}
+function penalty(){const el=document.getElementById('goalresult');if(el)el.textContent='Gol! Skor: '+(Number(el.textContent.replace(/\D/g,''))+1)}
+renderInstalled();
+</script>
+</body></html>
